@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="suggest.html">Suggest</a></li>
+                <li><a href="reference.html">Reference</a></li>
+                <li class="donate"><a href="#">Donate</a></li>
+            </ul>
+        </div>
+<div class="container-submit">
+
+
+   <div class="header-row">
+       <h1>Share a Resource</h1>
+   </div>
+
+
+   <form id="resourceForm">
+
+
+       <div class="form-row">
+           <div class="form-group">
+               <label>Your Name </label>
+               <input type="text" id="contactName" placeholder="Enter Your Name" required>
+           </div>
+
+
+           <div class="form-group">
+               <label>Your Email </label>
+               <input type="email" id="contactEmail" placeholder="Enter Your Email" required>
+           </div>
+       </div>
+
+
+
+
+       <div class="form-row">
+           <div class="form-group">
+               <label>Resource Title</label>
+               <input type="text" id="resourceTitle" placeholder="Name of Resource" required>
+           </div>
+
+
+           <div class="form-group">
+               <label>Resource Link (Optional)</label>
+               <input type="url" id="resourceLink" placeholder="Link to Resource" >
+           </div>
+       </div>
+        <!-- Row 4: Category + Description -->
+       <div class="form-group category">
+            <label>Category</label>
+                <select id="category" required>
+                   <option value="">Select one</option>
+                    <option>Health</option>
+                    <option>Education</option>
+                    <option>Food</option>
+                   <option>Shelter</option>
+                   <option>Senior Support</option>
+               </select>
+       </div>
+
+
+       <div class="form-group full">
+           <label>Resource Description</label>
+           <textarea id="resourceDesc" rows="5" placeholder="Briefly Describe the Resource" required></textarea>
+       </div>
+
+
+       <button type="submit" class="submit-btn">Submit →</button>
+       <p id="message"></p>
+
+
+   </form>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-container">
+
+    <div class="site-footer-left">
+      <div class="site-footer-links">
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="suggest.html">Suggest</a>
+        <a href="reference.html">Reference</a>
+      </div>
+
+      <button class="site-footer-donate">Donate</button>
+    </div>
+
+    <div class="site-footer-right">
+      <p class="site-footer-social-text">Stay Connected With Us</p>
+
+      <div class="site-footer-social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="site-footer-bottom">
+    <p>Made by Team 2, Ravenwood HighSchool <a href="#"></a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+    
+</body>
+</html>

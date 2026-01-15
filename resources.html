@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <!-- Swiperjs (for your card layout, keep it) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="suggest.html">Suggest</a></li>
+                <li><a href="reference.html">Reference</a></li>
+                <li class="donate"><a href="#">Donate</a></li>
+            </ul>
+        </div>
+    
+<section>
+    <div class="container swiper" id="resourcesList">
+         <h2 class="section-title">Resources</h2>
+
+         <!-- Search and Filter UI -->
+         <div class="filter-bar">
+            <input 
+                class="search" 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search resources..."
+            />
+
+            <div id="filterButtons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="health">Health</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="senior">Senior</button>
+                <button class="filter-btn" data-filter="shelter">Shelter</button>
+            </div>
+         </div>
+
+       <div class="class-wrapper">
+           <ul class="card-list swiper-wrapper list">
+               <!-- Each card keeps your original content, just add data-category -->
+               <li class="card-item swiper-slide" data-category="health">
+                    <a href="#" class="card-link"> 
+                       <img src="images/AliveHospice_health.png" alt="Alive Hospice" class="card-image">
+                       <div class="card-content">
+                       <p class="badge health">Health</p>
+                       <h3 class="card-name name">Alive Hospice</h3>
+                       <h5 class="card-title title">Provides personalized care for individuals with life-threatening illnesses and offers support services to their families.</h5>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item swiper-slide" data-category="health">
+                    <a href="#" class="card-link"> 
+                       <img src="images/STARSnashville_health.png" alt="Alive Hospice" class="card-image">
+                       <div class="card-content">
+                       <p class="badge health">Health</p>
+                       <h3 class="card-name name">STARS Nasvhille</h3>
+                       <h5 class="card-title title">Focuses on helping children and adults heal from trauma through arts-based programs.</h5>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item swiper-slide" data-category="education">
+                    <a href="#" class="card-link"> 
+                       <img src="images/PencilFoundation_edu.png" alt="Pencil Foundation" class="card-image">
+                       <div class="card-content">
+                       <p class="badge education">Education</p>
+                       <h3 class="card-name name">Pencil Foundation</h3>
+                       <h5 class="card-title title">Connects community resources to aid young people achieve academic growth and success.</h5>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item swiper-slide" data-category="education">
+                     <a href="#" class="card-link"> 
+                       <img src="images/AlignmentNashville_edu.png" alt="Alignment Nashville" class="card-image">
+                       <div class="card-content">
+                       <p class="badge education">Education</p>
+                       <h3 class="card-name name">Alignment Nashville</h3>
+                       <h5 class="card-title title">Works with community, businesses, and government to support local schools to improve the quality of education.</h5>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item swiper-slide" data-category="food"> 
+                    <a href="#" class="card-link"> 
+                       <img src="images/TheStore_food.png" alt="The Store" class="card-image">
+                       <div class="card-content">
+                       <p class="badge food">Food</p>
+                       <h3 class="card-name name">The Store</h3>
+                       <h5 class="card-title title">Offers free grocery to individuals and families in need, aiming to battle against starvation.</h5>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item swiper-slide" data-category="food">
+                    <a href="#" class="card-link"> 
+                       <img src="images/SecondHarvest_food.png" alt ="The Store" class="card-image">
+                       <div class="card-content">
+                       <p class="badge food">Food</p>
+                       <h3 class="card-name name">Second Harvest</h3>
+                       <h5 class="card-title title">Distributes food and resources to those in need to address hunger issues in the community.</h5>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+               </li>
+               <li class="card-item swiper-slide" data-category="shelter"> 
+                    <a href="#" class="card-link"> 
+                       <img src="images/SafeHaven_shelter.png" alt="Card Img" class="card-image">
+                       <div class="card-content">
+                       <p class="badge shelter">Shelter</p>
+                       <h3 class="card-name name">Safe Haven</h3>
+                       <h5 class="card-title title">Provides a safe place and support services to combat against homelessness and help vulnerable individuals.</h5>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item swiper-slide" data-category="shelter">
+                    <a href="#" class="card-link"> 
+                       <img src="images/Matthew25_shelter.png" alt="Card Img" class="card-image">
+                       <div class="card-content">
+                       <p class="badge shelter">Shelter</p>
+                       <h3 class="card-name name">Matthew 25</h3>
+                       <h5 class="card-title title">Focuses on providing shelter and resources for men and veterans experiencing homelessness, offering them life skills and support.</h5>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item swiper-slide" data-category="senior"> 
+                    <a href="#" class="card-link"> 
+                       <img src="images/AgeWell_senior.png" alt="Card Img" class="card-image">
+                       <div class="card-content">
+                       <p class="badge senior">Senior</p>
+                       <h3 class="card-name name">Age Well</h3>
+                       <h5 class="card-title title">Aims to empower and support older adults through resources like counseling, in-home support, and wellness programs.</h5>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item swiper-slide" data-category="senior"> 
+                    <a href="#" class="card-link"> 
+                       <img src="images/FiftyForward_senior.png" alt="Card Img" class="card-image">
+                       <div class="card-content">
+                       <p class="badge senior">Senior</p>
+                       <h3 class="card-name name">Fifty Forward</h3>
+                       <h5 class="card-title title">Offers numerous classes, health programs, activities, and oppurtunities to individuals above 50 years of age for independence.</h5>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+            </ul>
+            
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+       </div>
+   </div>
+</section>
+
+
+  
+<footer class="site-footer">
+  <div class="site-footer-container">
+
+    <div class="site-footer-left">
+      <div class="site-footer-links">
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="suggest.html">Suggest</a>
+        <a href="reference.html">Reference</a>
+      </div>
+
+      <button class="site-footer-donate">Donate</button>
+    </div>
+
+    <div class="site-footer-right">
+      <p class="site-footer-social-text">Stay Connected With Us</p>
+
+      <div class="site-footer-social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="site-footer-bottom">
+    <p>Made by Team 2, Ravenwood HighSchool <a href="#"></a></p>
+  </div>
+</footer>
+
+
+
+<!-- List.js library for search and filter -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+   
+</body>
+</html>
