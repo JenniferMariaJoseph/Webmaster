@@ -7,21 +7,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <!-- Swiperjs -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
     <title>Community Resource Hub</title>
     
 </head>
 <body>
+  <div class="navbar">
+    <!-- Add these two lines for the mobile menu toggle -->
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">☰</label>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="suggest.html">Suggest</a></li>
+        <li><a href="reference.html">Reference</a></li>
+        <li class="donate"><a href="#">Donate</a></li>
+    </ul>
+</div>
     <div class="banner">
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="suggest.html">Suggest</a></li>
-                <li><a href="reference.html">Reference</a></li>
-                <li class="donate"><a href="#">Donate</a></li>
-            </ul>
-        </div>
+      
 
         <div class="content">
             <h1>Better Access <br> Better Help</h1>
