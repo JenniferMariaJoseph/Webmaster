@@ -35,6 +35,7 @@ body{
     width: auto;          /* only as wide as items + padding */
     background-color: #DD7230;  /* keeps your orange */
     border-radius: 8px;          /* optional, looks nicer */
+    height: 5dvh;
 }
 
 
@@ -88,7 +89,7 @@ body{
     width: 100%;
     position: absolute;
     margin-left: 70px;
-    top: 50%;
+    top: 75%;
     transform: translateY(-50%);
     text-align: left;
     color: #fff;     
