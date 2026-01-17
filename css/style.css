@@ -124,7 +124,7 @@ button{
 }
 
 span{
-    background: #000; /* NO CHANGE ICON BACK */
+    background: #D9B38C; /* NO CHANGE ICON BACK */
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -135,6 +135,9 @@ span{
     transition: 0.5s;
 }
 
+.icon{
+    background-color: #000;
+}
 button:hover span{
     width: 100%;
 }
@@ -357,7 +360,7 @@ button:hover{
    border: 2px solid transparent;
    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
    transition: 0.2s ease;
-   height: 450px;
+   height: 500px;
   
 }
 
@@ -408,20 +411,21 @@ button:hover{
 
 .card-list .card-link .card-button {
     position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+    bottom: 15px;       /* distance from bottom */
+    left: 50%;           /* center horizontally */
+    transform: translateX(-50%) rotate(0deg); /* remove vertical translation, remove rotation */
     height: 35px;
     width: 35px;
-    padding: 8px 16px;
-    margin: 30px 0 5px;
     border-radius: 50%;
     border: 2px solid #D9B38C;
     background: none;
     color: #D9B38C;
     cursor: pointer;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .card-list .card-link:hover .card-button {
     background: #D9B38C;
@@ -681,7 +685,7 @@ button:hover{
 
 
  /* HARD SEPARATION */
- margin-top: 160px;
+ margin-top: -50px;
  border-top: 1px solid rgba(255,255,255,0.15);
 
 
