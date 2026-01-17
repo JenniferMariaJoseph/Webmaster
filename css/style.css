@@ -415,7 +415,7 @@ button:hover{
     left: 50%;           /* center horizontally */
     transform: translateX(-50%) rotate(0deg); /* remove vertical translation, remove rotation */
     height: 35px;
-    width: 35px;
+    width: 35px; 
     border-radius: 50%;
     border: 2px solid #D9B38C;
     background: none;
