@@ -981,3 +981,19 @@ textarea {
    margin-bottom: 4px;
 }
 
+.site-footer-ref{
+
+ background: radial-gradient(circle at top, #1b2a2f, #050a0c);
+ color: white;
+ padding: 80px 80px 30px;
+
+
+ /* HARD SEPARATION */
+ margin-top: -10px;
+ border-top: 1px solid rgba(255,255,255,0.15);
+
+
+ /* POSITION SAFETY */
+ position: relative;
+ z-index: 5;
+}
