@@ -685,7 +685,7 @@ button:hover{
 
 
  /* HARD SEPARATION */
- margin-top: -10px;
+ margin-top: -30px;
  border-top: 1px solid rgba(255,255,255,0.15);
 
 
@@ -996,4 +996,48 @@ textarea {
  /* POSITION SAFETY */
  position: relative;
  z-index: 5;
+}
+
+
+
+.site-footer-ref {
+    margin-top: 40px;
+}
+@media (max-width: 768px) {
+
+  .container-submit {
+    margin: 20px;              /* kill the 100px margins */
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .header-row h1 {
+    font-size: 32px;           /* 50px was doing too much */
+    margin-left: 0;
+  }
+
+  .header-row h1::after {
+    max-width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;    /* stack inputs */
+    gap: 16px;
+  }
+
+  .form-group.category {
+    max-width: 100%;           /* stop being stubborn */
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .submit-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
 }
