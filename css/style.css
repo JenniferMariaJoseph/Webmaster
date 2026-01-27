@@ -28,13 +28,13 @@ body{
 .navbar ul {
     display: flex;
     align-items: center;
-    justify-content: flex-end;  
+    justify-content: flex-end; 
     gap: 28px;                  
     margin: 0;
-    padding: 35px 40px;         
-    width: auto;          
+    padding: 35px 40px;       
+    width: auto;        
     background-color: #DD7230;  
-    border-radius: 8px;         
+    border-radius: 8px;          
     height: 5dvh;
 }
 
@@ -360,7 +360,7 @@ button:hover{
    border: 2px solid transparent;
    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
    transition: 0.2s ease;
-   height: 60px;
+   height: 600px;
   
 }
 
@@ -397,23 +397,23 @@ button:hover{
 
 /* Card Description */
 .card-list .card-link .card-title {
-    font-size: 1rem;       
-    color: black;             
+    font-size: 1rem;      
+    color: black;            
     font-weight: 500;
     margin-bottom: 40px;    
 }
 
 /* Move button to bottom center */
 .card-list .card-link {
-    position: relative;      
-    min-height: 300px; 
+    position: relative;     
+    min-height: 300px;       
 }
 
 .card-list .card-link .card-button {
     position: absolute;
-    bottom: 15px;       /* distance from bottom */
-    left: 50%;           /* center horizontally */
-    transform: translateX(-50%) rotate(0deg); 
+    bottom: 15px;    
+    left: 50%;           
+    transform: translateX(-50%) rotate(0deg);
     height: 35px;
     width: 35px; 
     border-radius: 50%;
@@ -658,7 +658,25 @@ button:hover{
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========================Footer Base =================*/
+
+
+
+
+
 
 .site-footer {
  background: radial-gradient(circle at top, #1b2a2f, #050a0c);
@@ -1012,7 +1030,7 @@ margin: 30px auto;
   }
 
   .form-group.category {
-    max-width: 100%;          
+    max-width: 100%;           
   }
 
   input,
