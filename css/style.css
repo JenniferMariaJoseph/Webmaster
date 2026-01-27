@@ -35,7 +35,7 @@ body{
     width: auto;        
     background-color: #DD7230;  
     border-radius: 8px;          
-    height: 5dvh;
+    height: 5vh;
 }
 
 
@@ -400,7 +400,7 @@ button:hover{
     font-size: 1rem;      
     color: black;            
     font-weight: 500;
-    margin-bottom: 40px;    
+    margin-bottom: 40px;     /* give space for button at bottom */
 }
 
 /* Move button to bottom center */
@@ -454,11 +454,11 @@ button:hover{
     font-size: 1.1rem;
     font-weight: bold;
     margin: 8px 0;
-    line-height: 1.2; 
+    line-height: 1.2; /* keep it tight */
 }
 
 .card-title {
-    font-size: 0.9rem;  
+    font-size: 0.9rem;  /* smaller than heading */
     line-height: 1.3;
     font-weight: 500;
     margin-top: 4px;
@@ -516,10 +516,10 @@ button:hover{
 /* Swiper arrows color */
 .swiper-button-prev,
 .swiper-button-next {
-    color: #D9B38C;   
+    color: #D9B38C;   /* your gold color */
 }
 
-
+/* Optional: make them slightly bigger or thicker */
 .swiper-button-prev::after,
 .swiper-button-next::after {
     font-size: 20px;  /* adjust arrow size */
@@ -556,7 +556,7 @@ button:hover{
 
 
 /* FILTER */
-
+/* Your existing CSS stays as is. Add these lines for search + filter */
 
 .filter-bar {
   display: flex;
@@ -595,7 +595,7 @@ button:hover{
 }
 
 
-
+/* optional: clean hiding cards */
 .card-item {
   display: block;
 }
