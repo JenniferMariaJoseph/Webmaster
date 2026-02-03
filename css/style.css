@@ -88,10 +88,10 @@ body{
 .content{
     width: 100%;
     position: absolute;
-    right: 60px;
+    left: 50px;
     top: 65%;
     transform: translateY(-50%);
-    text-align: right;
+    text-align: left;
     color: #fff;     
 }
 
@@ -513,6 +513,7 @@ button:hover{
 
 
 /* contact*/
+/* REQUIRED for Material Symbols */
 
 
 
