@@ -736,51 +736,11 @@ button:hover{
 }
 
 
-/* DONATE */
-.site-footer-donate {
- background-color: #1db954;
- color: white;
- border: none;
- padding: 14px 40px;
- font-size: 16px;
- font-weight: bold;
- text-transform: uppercase;
- cursor: pointer;
- border-radius: 3px;
-}
-
-
-.site-footer-donate:hover {
- transform: translateY(-2px);
- box-shadow: 0 6px 15px rgba(29, 185, 84, 0.4);
-}
-
-
 /* RIGHT */
 .site-footer-right {
  text-align: right;
 }
 
-
-.site-footer-social-text {
- font-size: 14px;
- letter-spacing: 1px;
- margin-bottom: 15px;
- font-weight: bold;
-}
-
-
-.site-footer-social-icons a {
- color: white;
- font-size: 20px;
- margin-left: 20px;
-}
-
-
-.site-footer-social-icons a:hover {
- color: #1db954;
- transform: scale(1.2);
-}
 
 
 /* BOTTOM */
