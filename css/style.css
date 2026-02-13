@@ -220,18 +220,16 @@ button:hover{
 .timeline-section{ 
     position: relative; 
      background-color: #000000; /*======counter back======*/
-     margin-top: -100px;
-     margin-bottom: 60px;
-     width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+
+     width: 100%;
+
 }
 
 .timeline-item:last-child {
   margin-bottom: 0;
 }
 
-      /* Center green line */ 
+      /* Center white line */ 
 .timeline-line { 
     position: absolute; 
     left: 50%; 
@@ -354,6 +352,7 @@ button:hover{
     margin: 0 auto; 
     padding: 60px 20px; 
 }
+
 
 .counter-section {
     background: #f7e5d2;
@@ -520,29 +519,33 @@ button:hover{
 }
 
 .card-list .card-link .badge.health {
-    color: #57C785;
+    color: #2E8B57;
     background: #BBEB9B;
 }
 
+
 .card-list .card-link .badge.education {
-    color: #CCC15A;
+    color: #8A7A1F;
     background: #F5EEAE;
 }
 
+
 .card-list .card-link .badge.food {
-    color: #F57D7D;
-    background: #F5BABA;
+    color: #B34747;
+    background: #FFE2E2;
 }
 
+
 .card-list .card-link .badge.shelter {
-    color: rgb(163, 187, 184);
-    background: #baece0;
+    color: #5A6F3A;
+    background: #EEF5D8;
 }
 
 .card-list .card-link .badge.senior {
-    color: #74B3F2;
-    background: #B3D4F5;
+    color: #2F6CA3;
+    background: #E2F0FF;
 }
+
 .card-list .card-link .badge.mental {
     color: #9C4F7A;
     background: #FDE4F1;
@@ -931,6 +934,16 @@ button:hover{
    margin-right: 100px;
    margin-left: 100px;
    padding: 40px;
+   .container-submit {
+   max-width: 1000px;
+   background: #f7e5d2; /* updated from #e3d78900 */
+   margin-top: 30px;
+   margin-right: 100px;
+   margin-left: 100px;
+   padding: 40px;
+   box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
