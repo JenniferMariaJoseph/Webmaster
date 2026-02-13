@@ -6,14 +6,13 @@
      <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     
-    <!-- Swiperjs -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css?v=2">
   <link rel="stylesheet" href="css/menu.css?v=2">
     <title>Resources</title>
 </head>
 <body>
-   
+
+
 
    <div class="navbar">
       
@@ -29,8 +28,9 @@
       </ul>
   </div>
     
-<section>
-    <div class="container swiper" id="resourcesList">
+<section class="resources-section">
+
+    <div class="container container-resources" id="resourcesList">
          <h2 class="section-title">Resources</h2>
 
          <!-- Search and Filter UI -->
@@ -44,145 +44,461 @@
 
             <div id="filterButtons">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="health">Health</button>
-                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="health">Wellness Resources</button>
+                <button class="filter-btn" data-filter="food">Food Assistance</button>
                 <button class="filter-btn" data-filter="education">Education</button>
-                <button class="filter-btn" data-filter="senior">Senior</button>
-                <button class="filter-btn" data-filter="shelter">Shelter</button>
+                <button class="filter-btn" data-filter="senior">Senior Services</button>
+                <button class="filter-btn" data-filter="shelter">Residential & Transitional Support</button>
+                <button class="filter-btn" data-filter="mental">Mental Wellness</button>
+                <button class="filter-btn" data-filter="family">Family & Child Services</button>
+                <button class="filter-btn" data-filter="volunteer">Community & Volunteer Programs</button>
+                <button class="filter-btn" data-filter="housing">Housing Assistance</button>
             </div>
          </div>
 
        <div class="class-wrapper">
-           <ul class="card-list swiper-wrapper list">
+           <ul class="card-list list">
                
 
                <!-- HEALTH-->
-               <li class="card-item swiper-slide" data-category="health">
+               <li class="card-item" data-category="health">
                     <a href="https://www.alivehospice.org/" class="card-link"> 
-                       <img src="images/AliveHospice_health.png" alt="Alive Hospice" class="card-image">
+                       <img src="images/health.png" alt="Alive Hospice" class="card-image">
                        <div class="card-content">
-                       <p class="badge health">Health</p>
+                       <p class="badge health">Wellness Resources</p>
                        <h3 class="card-name name">Alive Hospice</h3>
-                       <h5 class="card-title title">Provides personalized care for individuals with life-threatening illnesses and offers support services to their families.</h5>
-                           
-                              
+                        <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        1718 Patterson Street Nashville, TN 37203
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        info@alivehospice.org
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 327-1085
+                     </p>
                        </div>
                        <button class="card-button material-symbols-outlined">arrow_forward</button>
                     </a>
                </li>
-               <li class="card-item swiper-slide" data-category="health">
+               <li class="card-item" data-category="health">
                     <a href="https://starsnashville.org/" class="card-link"> 
-                       <img src="images/STARSnashville_health.png" alt="Alive Hospice" class="card-image">
+                       <img src="images/health.png" alt="Alive Hospice" class="card-image">
                        <div class="card-content">
-                       <p class="badge health">Health</p>
+                       <p class="badge health">Wellness Resources</p>
                        <h3 class="card-name name">STARS Nasvhille</h3>
-                       <h5 class="card-title title">Focuses on helping children and adults heal from trauma through arts-based programs.</h5>
-                       </div>
+                  
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        1704 Charlotte Avenue, Suite 200, Nashville, TN 37203
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        info@starsnashville.org
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 361-6608
+                     </p>
+                        </div>
                        <button class="card-button material-symbols-outlined">arrow_forward</button>
                     </a>
                </li>
 
 
                <!-- EDU -->
-               <li class="card-item swiper-slide" data-category="education">
+               <li class="card-item" data-category="education">
                     <a href="https://pencilforschools.org/" class="card-link"> 
-                       <img src="images/PencilFoundation_edu.png" alt="Pencil Foundation" class="card-image">
+                       <img src="images/education.png" alt="Pencil Foundation" class="card-image">
                        <div class="card-content">
                        <p class="badge education">Education</p>
                        <h3 class="card-name name">Pencil Foundation</h3>
-                       <h5 class="card-title title">Connects community resources to aid young people achieve academic growth and success.</h5>
+                        
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        7199 Cockrill Bend Blvd
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        info@pencil615.org
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 988-4928
+                     </p>
                        </div>
                        <button class="card-button material-symbols-outlined">arrow_forward</button>
                     </a>
                </li>
-               <li class="card-item swiper-slide" data-category="education">
+
+
+               <li class="card-item" data-category="education">
                      <a href="https://www.alignmentnashville.org/" class="card-link"> 
-                       <img src="images/AlignmentNashville_edu.png" alt="Alignment Nashville" class="card-image">
+                       <img src="images/education.png" alt="Alignment Nashville" class="card-image">
                        <div class="card-content">
                        <p class="badge education">Education</p>
                        <h3 class="card-name name">Alignment Nashville</h3>
-                       <h5 class="card-title title">Works with community, businesses, and government to support local schools to improve the quality of education.</h5>
-                       </div>
+                        
+                       
+                     <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        P.O. Box 41089, Nashville, TN 37204-9998
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        info@alignmentnashville.org
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (629) 285-4127
+                     </p>
+                     </div>
                        <button class="card-button material-symbols-outlined">arrow_forward</button>
                     </a>
-               </li>
-
+               </li>        
                <!-- FOOD -->
-               <li class="card-item swiper-slide" data-category="food"> 
+               <li class="card-item" data-category="food"> 
                     <a href="https://thestore.org/" class="card-link"> 
-                       <img src="images/TheStore_food.png" alt="The Store" class="card-image">
+                       <img src="images/food_assistance.png" alt="The Store" class="card-image">
                        <div class="card-content">
-                       <p class="badge food">Food</p>
+                       <p class="badge food">Food Assistance</p>
                        <h3 class="card-name name">The Store</h3>
-                       <h5 class="card-title title">Offers free grocery to individuals and families in need, aiming to battle against starvation.</h5>
+                        <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        2009 12th Avenue South, Nashville, TN 37204
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        info@thestore.org
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 460-8331
+                     </p>
                        </div>
                        <button class="card-button material-symbols-outlined">arrow_forward</button>
                     </a>
                </li>
-               <li class="card-item swiper-slide" data-category="food">
+               <li class="card-item" data-category="food">
                     <a href="https://www.secondharvestmidtn.org/" class="card-link"> 
-                       <img src="images/SecondHarvest_food.png" alt ="The Store" class="card-image">
+                       <img src="images/food_assistance.png" alt ="The Store" class="card-image">
                        <div class="card-content">
-                       <p class="badge food">Food</p>
+                       <p class="badge food">Food Assistance</p>
                        <h3 class="card-name name">Second Harvest</h3>
-                       <h5 class="card-title title">Distributes food and resources to those in need to address hunger issues in the community.</h5>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        331 Great Circle Road, Nashville, TN 37228
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        info@secondharvestmidtn.org
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 329-3491
+                     </p>
+
                        </div>
                        <button class="card-button material-symbols-outlined">arrow_forward</button>
+                       </a>
                </li>
 
                <!-- SHELTER -->
-               <li class="card-item swiper-slide" data-category="shelter"> 
+               <li class="card-item" data-category="shelter"> 
                     <a href="https://safehaven.org/" class="card-link"> 
                        <img src="images/SafeHaven_shelter.png" alt="Card Img" class="card-image">
                        <div class="card-content">
-                       <p class="badge shelter">Shelter</p>
+                       <p class="badge shelter">Residential & Transitional Support</p>
                        <h3 class="card-name name">Safe Haven</h3>
-                       <h5 class="card-title title">Provides a safe place and support services to combat against homelessness and help vulnerable individuals.</h5>
+                        <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        1234 3rd Avenue South, Nashville, TN 37210
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                         info@safehaven.org
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 256-8195
+                     </p>
+
                        </div>
                        <button class="card-button material-symbols-outlined">arrow_forward</button>
                     </a>
                </li>
-               <li class="card-item swiper-slide" data-category="shelter">
+               <li class="card-item" data-category="shelter">
                     <a href="https://www.matthew25nashville.org/" class="card-link"> 
                        <img src="images/Matthew25_shelter.png" alt="Card Img" class="card-image">
                        <div class="card-content">
-                       <p class="badge shelter">Shelter</p>
+                       <p class="badge shelter">Residential & Transitional Support</p>
                        <h3 class="card-name name">Matthew 25</h3>
-                       <h5 class="card-title title">Focuses on providing shelter and resources for men and veterans experiencing homelessness, offering them life skills and support.</h5>
-                       </div>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        625 Benton Ave, Nashville, TN 37204
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        mmiller@matthew25nashville.org
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 383-9577
+                     </p>                       
+                  </div>
                        <button class="card-button material-symbols-outlined">arrow_forward</button>
                     </a>
                </li>
 
                <!--SENIOR -->
-               <li class="card-item swiper-slide" data-category="senior"> 
+               <li class="card-item" data-category="senior"> 
                     <a href="https://agewelltn.org/" class="card-link"> 
-                       <img src="images/AgeWell_senior.png" alt="Card Img" class="card-image">
+                       <img src="images/seniors_support.png" alt="Card Img" class="card-image">
                        <div class="card-content">
-                       <p class="badge senior">Senior</p>
+                       <p class="badge senior">Senior Services</p>
                        <h3 class="card-name name">Age Well</h3>
-                       <h5 class="card-title title">Aims to empower and support older adults through resources like counseling, in-home support, and wellness programs.</h5>
-                       </div>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        3511 Belmont Blvd. Nashville, TN 37215
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        info@agewelltn.org
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 353-4235 
+                     </p>                       
+                  </div>
                        <button class="card-button material-symbols-outlined">arrow_forward</button>
                     </a>
                </li>
-               <li class="card-item swiper-slide" data-category="senior"> 
+               <li class="card-item" data-category="senior"> 
                     <a href="https://fiftyforward.org/" class="card-link"> 
-                       <img src="images/FiftyForward_senior.png" alt="Card Img" class="card-image">
+                       <img src="images/seniors_support.png" alt="Card Img" class="card-image">
                        <div class="card-content">
-                       <p class="badge senior">Senior</p>
+                       <p class="badge senior">Senior Services</p>
                        <h3 class="card-name name">Fifty Forward</h3>
-                       <h5 class="card-title title">Offers numerous classes, health programs, activities, and oppurtunities to individuals above 50 years of age for independence.</h5>
-                       </div>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        960 Heritage Way, Brentwood, TN 37027
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        info@fiftyforward.org
+                     </p>
+                     
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) shussey@fiftyforward.org376-0102
+                     </p>                      
+                   </div>
                        <button class="card-button material-symbols-outlined">arrow_forward</button>
                     </a>
                </li>
+               <li class="card-item" data-category="mental">
+                     <a href="https://namitn.org/?utm_source=chatgpt.com" class="card-link"> 
+                       <img src="images/mental_health.png" alt="NAMI" class="card-image">
+                       <div class="card-content">
+                       <p class="badge mental">Mental Wellness</p>
+                       <h3 class="card-name name">NAMI Tennessee</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        131 Sanders Ferry Rd. Suite B, Hendersonville, TN 37075
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        info@namitn.org
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        615-361-6608
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item" data-category="mental">
+                     <a href="https://tnvoices.org/" class="card-link"> 
+                       <img src="images/mental_health.png" alt="TN Voices" class="card-image">
+                       <div class="card-content">
+                       <p class="badge mental">Mental Wellness</p>
+                       <h3 class="card-name name">TN Voices</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        805 Meadowlark Lane, Goodlettsville, TN 37072
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        press@tnvoices.org
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 269-7751
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <!-- CHILD & FAMILY SUPPORT-->
+                               <li class="card-item" data-category="family">
+                     <a href="tncasa.org" class="card-link"> 
+                       <img src="images/NAMI_mentalwellness.png" alt="TN Voices" class="card-image">
+                       <div class="card-content">
+                       <p class="badge family">Family & Child Service</p>
+                       <h3 class="card-name name">Kid Central TN</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        745 South Church Street, Suite 401, Murfreesboro, Tennessee 37130
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                         kid.central@tn.gov
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 220-3990
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item" data-category="family">
+                     <a href="tnchildren.org" class="card-link"> 
+                       <img src="images/NAMI_mentalwellness.png" alt="TN Allicance" class="card-image">
+                       <div class="card-content">
+                       <p class="badge family">Family & Child Service</p>
+                       <h3 class="card-name name">TN Alliance</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        525 Royal Parkway PO Box 292734, Nashville, TN 37229
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        admin@tnchildren.org
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 788-1555
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <!-- VOLUNTEER-->
+                               
+               <li class="card-item" data-category="volunteer">
+                     <a href="https://handson.unitedwaygreaternashville.org/" class="card-link"> 
+                       <img src="images/community.png" alt="Hands On" class="card-image">
+                       <div class="card-content">
+                       <p class="badge volunteer">Community & Volunteer Programs</p>
+                       <h3 class="card-name name">Hands On Nashville</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        2525 Perimeter Place Drive, Suite 121, Nashville, TN 37214
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        handson@unitedwaygn.org 
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 298-1108
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               
+               <li class="card-item" data-category="volunteer">
+                     <a href="https://www.volunteeretn.org/" class="card-link"> 
+                       <img src="images/community.png" alt="Voulunteer East Tennessee" class="card-image">
+                       <div class="card-content">
+                       <p class="badge volunteer">Community & Volunteer Programs</p>
+                       <h3 class="card-name name">Voulunteer East Tennessee</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        1301 Hannah Avenue, Knoxville, TN 37921
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        info@VolunteerETN.org
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (865) 582-4085
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <!-- HOUSING -->
+               <li class="card-item" data-category="housing">
+                     <a href="http://nashvillecares.org/" class="card-link"> 
+                       <img src="images/housing_assistance.png" alt="Nashville CARES" class="card-image">
+                       <div class="card-content">
+                       <p class="badge housing">Housing Assistance</p>
+                       <h3 class="card-name name">Nashville CARES</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        633 Thompson Lane, Nashville, TN 37204
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        info@nashvillecares.org
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 259-4866
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+                              <li class="card-item" data-category="housing">
+                     <a href="https://www.habitatsumnercounty.org/" class="card-link"> 
+                       <img src="images/housing_assistance.png" alt="Habitat For Humanity of Sumner County" class="card-image">
+                       <div class="card-content">
+                       <p class="badge housing">Housing Assistance</p>
+                       <h3 class="card-name name">Habitat For Humanity of Sumner County</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        327 Sumner Hall Drive, Gallatin, TN 37066
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        info@habitatsumnercounty.org
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        (615) 452-9606
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>                
             </ul>
             
-            <div class="swiper-pagination"></div>
-            <div class="swiper-slide-button swiper-button-prev"></div>
-            <div class="swiper-slide-button swiper-button-next"></div>
-       </div>
+            
    </div>
 </section>
 
@@ -206,7 +522,6 @@
 
 <!-- List.js library for search and filter -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 
    
