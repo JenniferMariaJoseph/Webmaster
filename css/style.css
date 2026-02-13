@@ -91,7 +91,7 @@ body{
     left: 50px;
     top: 65%;
     transform: translateY(-50%);
-    text-align: left;
+    text-align: center;
     color: #fff;     
 }
 
@@ -124,8 +124,8 @@ button{
     overflow: hidden;
 }
 
-span{
-    background: #D9B38C; /* NO CHANGE ICON BACK */
+button span{
+    background: #D9B38C; /* ICON BACK */
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -146,6 +146,41 @@ button:hover span{
 button:hover{
     border: none;
    
+}
+
+/* ANIMATION*/
+
+.content h1,
+.content p,
+.content button {
+    opacity: 0;
+    transform: translateY(8px); 
+    animation: fadeUp 0.5s ease forwards
+} 
+
+
+.content h1 {
+    animation-delay: 0.9s;
+}
+
+.content p {
+    animation-delay: 0.9s;
+}
+
+.content button:nth-of-type(1) {
+    animation-delay: 0.9s;
+}
+
+.content button:nth-of-type(2) {
+    animation-delay: 0.9s;
+}
+
+/* Animation */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -184,8 +219,12 @@ button:hover{
 /* Timeline Section */ 
 .timeline-section{ 
     position: relative; 
-     background-color: #000; /*======counter back======*/
-     margin-top: -170px;
+     background-color: #000000; /*======counter back======*/
+     margin-top: -100px;
+     margin-bottom: 60px;
+     width: 90%;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .timeline-item:last-child {
@@ -278,7 +317,7 @@ button:hover{
     display: flex;
     width: 100%;                /* fill the circle container */
    height: 100%;  
--webkit-text-fill-color: #fff; /* works for Webkit browsers */
+-webkit-text-fill-color: #fff; 
     font-variation-settings: 'FILL' 1, 'wght' 400;
 }
 
@@ -401,7 +440,7 @@ button:hover{
     font-size: 1rem;      
     color: black;            
     font-weight: 500;
-    margin-bottom: 40px;     /* give space for button at bottom */
+    margin-bottom: 40px;     
 }
 
 /* Move button to bottom center */
@@ -496,14 +535,35 @@ button:hover{
 }
 
 .card-list .card-link .badge.shelter {
-    color: #B67AF5;
-    background: #D4B8F2;
+    color: rgb(163, 187, 184);
+    background: #baece0;
 }
 
 .card-list .card-link .badge.senior {
     color: #74B3F2;
     background: #B3D4F5;
 }
+.card-list .card-link .badge.mental {
+    color: #9C4F7A;
+    background: #FDE4F1;
+}
+
+.card-list .card-link .badge.family {
+    color: #6B5ACD;
+    background: #ECE7FF;
+}
+
+.card-list .card-link .badge.volunteer {
+    color: #C26A1B;
+    background: #FFE9D6;
+}
+
+.card-list .card-link .badge.housing {
+    color: #2E8B7F;
+    background: #DDF5F1;
+}
+
+
 
 .card-list .card-link .card-title{
    font-size: 1.19rem;
@@ -513,7 +573,70 @@ button:hover{
 
 
 /* contact*/
-/* REQUIRED for Material Symbols */
+.resources-section .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-list .card-item {
+    display: block;
+}
+.card-link {
+    height: 450px;
+}
+
+
+.resources-section {
+    background-color: #fddfc0;
+}
+
+.card-content p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    color: black;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.card-content p + p {
+    position: relative;
+    padding-top: 16px; 
+    margin-top: 8px;  
+}
+
+.card-content p + p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    right: 30px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.info-icon {
+    font-size: 16px;
+    background-color: #D9B38C;
+    color: white;
+
+    width: 28px;
+    height: 28px;
+    min-width: 28px;   
+    aspect-ratio: 1 / 1; 
+
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    flex-shrink: 0;  
+}
+
+
+
 
 
 
@@ -577,27 +700,61 @@ button:hover{
   flex: 1;
 }
 
+
+#filterButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
 .filter-btn {
-  padding: 10px 18px;
-  border-radius: 6px;      
-  background: #DD7230;    
-  color: white;           
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    color: #DD7230;
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 160px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+
+.filter-btn::after {
+    content: '→';
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%) translateX(10px); 
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.filter-btn:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0); 
 }
 
 .filter-btn:hover {
-  transform: translateY(-4px); 
-  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    background: #DD7230;
+    color: #fff;
 }
 
-.filter-btn.active {
-  background: #DD7230;
-  color: #FFF7ED;  
-  border-color: #DD7230;
+.filter-btn:hover {
+    background: #DD7230;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
+
 
 
 
@@ -663,24 +820,7 @@ button:hover{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ========================Footer Base =================*/
-
-
-
-
 
 
 .site-footer {
@@ -688,13 +828,9 @@ button:hover{
  color: white;
  padding: 80px 80px 30px;
 
-
- /* HARD SEPARATION */
  margin-top: -30px;
  border-top: 1px solid rgba(255,255,255,0.15);
 
-
- /* POSITION SAFETY */
  position: relative;
  z-index: 5;
 }
@@ -798,7 +934,6 @@ button:hover{
    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-
 /* Header */
 .header-row {
    flex-direction: column;
@@ -806,8 +941,6 @@ button:hover{
    gap: 6px;
    cursor: default;
 }
-
-
 
 
 .header-row h1 {
@@ -944,8 +1077,6 @@ textarea {
 }
 
 
-
-
 .form-group.category label {
    font-size: 13px;
    margin-bottom: 4px;
@@ -1004,11 +1135,6 @@ margin: 30px auto;
     font-size: 15px;
     width: 100%;
   }
-
-
-
-
-
 
   .submit-btn {
     font-size: 15px;

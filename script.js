@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ---------- SWIPER ---------- */
-  if (document.querySelector(".class-wrapper")) {
-    new Swiper(".class-wrapper", {
+  if (document.querySelector(".popular-swiper")) {
+    new Swiper(".popular-swiper", {
       loop: true,
       spaceBetween: 30,
       pagination: {
